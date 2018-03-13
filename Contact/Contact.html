@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="Contact.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<main class="site-main">
+    <div class="columns container">
+        <ol class="breadcrumb no-hide">
+            <li><a href="https://beautygarden.vn" title="Beautygarden">Trang chủ</a></li>
+            <li class="active">Liên hệ</li>
+        </ol>
+        <h2 class="page-heading">
+            <span class="page-heading-title2 guiTT">GỬI THÔNG TIN LIÊN HỆ</span>
+        </h2>
+        <div class="page-content" id="contact">
+            <div class="row">
+                <form action="" method="post" onsubmit="return validateForm()">
+                    <div class="col-sm-6">
+                        <h4 class="page-subheading">HỆ THỐNG PHÂN PHỐI MỸ PHẨM CHÍNH HÃNG</h4>
+                        <span style="color: green;"></span>
+                        <div class="contact-form-box">
+                            <div class="form-selector">
+                                <label>Họ tên <span class="span">(*)</span></label>
+                                <input class="form-control input-sm" id="name" name="name" type="text" value="">
+                            </div>
+                            <div class="form-selector">
+                                <label>Điện thoại <span class="span">(*)</span></label>
+                                <input class="form-control input-sm" id="phone" name="phone" type="text" value="">
+                            </div>
+                            <div class="form-selector">
+                                <label>Email <span class="span">(*)</span></label>
+                                <input class="form-control input-sm" data-val="true"
+                                       id="email" name="email" type="text" value="">
+                            </div>
+                            <div class="form-selector">
+                                <label>Địa chỉ</label>
+                                <input type="text" id="order_reference" name="GiaoHang" class="form-control input-sm">
+                            </div>
+                            <div class="form-selector">
+                                <label>Nội dung</label>
+                                <textarea class="form-control input-sm" cols="20" id="Content" name="Content" rows="2"></textarea>
+                            </div> <br />
+                            <div class="form-selector">
+                                <button type="submit" class="btn" id="btn-send-contact">Gửi</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <script>
+                    function validateForm() {
+                        var username = document.getElementById('name').value;
+                        var phone = document.getElementById('phone').value;
+                        var email = document.getElementById('email').value;
+
+                        if(username == ''){
+                            alert('Vui lòng nhập họ tên');
+                        }else if (phone == ''){
+                            alert('Vui lòng nhập số điện thoại');
+                        }else if(email == ''){
+                            alert('Vui lòng nhập email');
+                        }
+                    }
+                </script>
+                <div class="col-xs-12 col-sm-6">
+                    <h3 class="page-subheading h3">VĂN PHÒNG GIAO DỊCH</h3>
+                    <ul class="store_info">
+                        <li><i class="fa fa-home"></i>255 Bình Lợi, P.13, Q.Bình Thạnh, Tp.HCM</li>
+                        <li><i class="fa fa-phone"></i><span>Tổng đài: 1900 7013</span> </li>
+                        <li><i class="fa fa-phone"></i><span>Hotline: 02 873 000 283 </span></li>
+                        <li><i class="fa fa-envelope"></i>Email: <span><a href="mailto:info@beautygarden.vn" title="Email">info@beautygarden.vn</a></span></li>
+                        <li><i class="fa fa-phone"></i><span>Website: <a href="https://beautygarden.vn/">www.beautygarden.vn </a></span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <h3 class="page-subheading h3">Hệ Thống cửa hàng</h3>
+                    <ul class="store_info">
+                        <li><i class="fa fa-home"></i>Quận 3 Tp HCM: số 71, đường số 3, Cư Xá Đô Thành, P4, Q3</li>
+                        <li><i class="fa fa-home"></i>Q.Phú Nhuận Tp HCM: 98B Phan Đăng Lưu, P.3, Q.Phú Nhuận</li>
+                        <li><i class="fa fa-phone"></i><span class="phone">0911 784 114</span></li>
+                    </ul>
+                    <ul class="store_info">
+                        <li><i class="fa fa-home"></i>Hà Nội: 152 Chùa Bộc, Đống Đa, Hà Nội</li>
+                        <li><i class="fa fa-phone"></i><span class="phone">0911 584 114</span></li>
+                    </ul>
+                    <ul class="store_info">
+                        <li><i class="fa fa-home"></i>Đà Nẵng: 268 Trưng Nữ Vương, P.Bình Thuận, Q.Hải Châu</li>
+                        <li><i class="fa fa-phone"></i><span class="phone">0911 684 114</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
