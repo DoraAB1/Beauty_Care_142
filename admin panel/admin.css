@@ -7,14 +7,15 @@ body {
 }
 #page-wrapper {
   padding: 0 15px;
+  padding-bottom: 50px;
   min-height: 568px;
   background-color: white;
 }
 @media (min-width: 768px) {
   #page-wrapper {
     position: inherit;
-    margin: 0 0 0 250px;
-    padding: 0 30px;
+    margin: 0 0 50px 250px;
+    padding: 0 30px 30px 30px;
     border-left: 1px solid #e7e7e7;
   }
 }
@@ -182,4 +183,12 @@ body {
 
 .login-panel {
   margin-top: 200px
+}
+
+.huge {
+  font-size: 40px;
+}
+
+.panel-body {
+  border: solid 0.5px #ccc;
 }
